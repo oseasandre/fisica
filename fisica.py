@@ -31,7 +31,7 @@ def desvios(media, T):
 def printT(T, D):
 	print('\n{0}	{1}	{2}'.format('Med.nº', 'Ti(s)','Desv(s)'))
 	for i in range(0,len(T)):
-		print('{0}	{1}	{2}'.format(str(i+1), T[i],D[i]))
+		print('{0}	{1}	{2:3.3f}'.format(str(i+1), T[i],D[i]))
 
 #programa principal
 T = ler_dados_do_arquivo() 										#carregar os periodos medidos
@@ -50,7 +50,7 @@ gmed = (4*(pi**2)*l)/(mediaT**2)
 
 printT(T, D)															#exibir a tabela de peirodos e seus desvios
 print('\nPerioso Médio<T>: {0} (s)'.format(mediaT))				#exibir o periodo medio
-print('Desvio medio <delta>: {0} (s)'.format(mediaD))			#exibir o desvio medio
+print('Desvio medio <delta>: {0:3.3f} (s)'.format(mediaD))			#exibir o desvio medio
 print('Incerteza instrumental: {0} (s)'.format(0.01))
 print('Tmax: {0:3.3f} (s)'.format(tmax))
 print('Tmin: {0:3.3f} (s)'.format(tmin))
