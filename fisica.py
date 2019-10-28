@@ -3,7 +3,7 @@ from math import sqrt
 #T é periodo
 def ler_dados_do_arquivo():
 	Dados= []
-	arq = open('fisica2.txt','r')
+	arq = open('fisica.txt','r')
 	linhas = arq.readlines();
 	arq.close()
 	for linha in linhas:
